@@ -1,4 +1,6 @@
+{% extends "base.html" %} {% block content %}
 <h2>List</h2>
+
 {% for todo in todos %}
 <p>
   {{ todo.name }}
@@ -7,4 +9,4 @@
 </p>
 {% empty %}
 <p>There are no records to show</p>
-{% endfor %}
+{% endfor %} {% endblock content %}
